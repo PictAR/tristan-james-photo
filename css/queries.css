@@ -1,0 +1,24 @@
+/* <= 860px: stack columns, adjust heights */
+@media (max-width: 860px){
+  .two{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  #webgl-wrap{height:48vh}
+  .row{grid-template-columns:1fr}
+  #lightbox-img{ max-height: 60vh; }
+}
+
+/* >= 1200px: larger carousel area */
+@media (min-width: 1200px){
+  #webgl-wrap{ height:min(72vh, 740px); }
+}
+
+/* >= 1400px: let the hero breathe a bit more */
+@media (min-width: 1400px){
+  .hero{padding:80px 0 18px}
+}
+
+@media (max-width: 800px){
+  .two{ grid-template-columns: 1fr; }
+  /* Typeform auto-sizes, but a little padding helps */
+  [data-tf-live]{ min-height: 520px; }
+}
