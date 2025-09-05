@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TJ Photo</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/queries.css">
+
+  <!-- Fonts / Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<link rel="icon" type="image/png" href="resources/icon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="resources/icon/favicon.svg" />
+<link rel="shortcut icon" href="resources/icon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="resources/icon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="TJ | Photo" />
+<link rel="manifest" href="resources/icon/site.webmanifest" />
+
+
+  <meta name="description" content="Tristan James Photo portfolio — music and photography showcase">
+</head>
+<body>
+  <body id="top">
+  <!-- Header -->
+<header>
+  <div class="container nav">
+    <!-- Left-aligned logotype -->
+    <div class="logotype">
+      <img src="resources/icon/headerLogoTJP.png" alt="Tristan James Photography logo">
+    </div>
+
+    <!-- Centered icon (scroll-to-top) -->
+    <a href="#top" class="logo-link">
+      <img src="resources/icon/iconTJP-wht.svg" alt="TJ Photo icon">
+    </a>
+
+    <!-- Right-aligned nav -->
+    <nav class="links">
+      <a href="#music">Music</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Hero -->
+  <section class="hero container">
+<div class="title">
+  <span class="title-bold">PHOTOGRAPHY </span> <span class="title-light">- PORTFOLIO</span>
+</div>
+    <p>Some shots from over the years.</p>
+  </section>
+
+  <!-- Carousel -->
+  <section id="music" class="container">
+    <div id="webgl-wrap" class="card">
+      <canvas id="webgl"></canvas>
+      <div class="hint">drag / swipe to rotate • click to view</div>
+    </div>
+  </section>
+
+  <!-- About + Contact -->
+<section id="about" class="container two">
+  <div class="card bio">
+    <h2>About</h2>
+    <p>I picked up my first camera back in Grade 9 “Media Studies,” when we were still rolling film and burning through packs of disposables from the mall. I learned to develop in the darkroom at school, and that mix of chemicals, timing, and surprise hooked me.<br><br>
+
+    By 2002 I had a digital camera. It wasn’t great, but it was enough to make photography part of my everyday. I’ve always gravitated toward things with movement and energy (skateboarding, sports, bands, live shows, etc.) so it was natural to point the lens there. The camera became a way to bottle up that feeling and replay it later.<br><br>
+
+    Over time, I found myself in front of more and more stages, trying to capture the way a crowd leans in on the first note, or how a band can turn a room inside out in a single chorus. My goal has always been simple: make the bands look as good as they sound, and let the photos carry the same energy you felt in the moment.</p>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+
+    <!-- Inline Typeform embed -->
+<div data-tf-live="01K4BZM1SYAW67GFWJ64YQ30KV"></div>
+<script src="//embed.typeform.com/next/embed.js"></script>
+
+    <!-- Optional direct button instead of inline embed:
+    <a data-tf-popup="FORM_ID" data-tf-size="70" class="btn">
+      <i class="fa-solid fa-paper-plane"></i> Open Contact Form
+    </a>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+    -->
+
+    <!-- <ul class="details" style="margin-top:12px">
+      <li><i class="fa-regular fa-envelope"></i> tristanjames3d@gmail.com</li>
+    </ul> -->
+  </div>
+</section>
+
+  <!-- Footer -->
+<footer class="site-footer">
+  <p>&copy; Island T | 3D 2025 · <a href="mailto:tristanjames3d@gmail.com">tristanjames3d@gmail.com</a></p>
+</footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="hidden">
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Selected image">
+      <div id="lightbox-caption"></div>
+      <button id="lightbox-close">&times;</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+<script src="js/bg.js" defer></script>
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js" defer></script>
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
